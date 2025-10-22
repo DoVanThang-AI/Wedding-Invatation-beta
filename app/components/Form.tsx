@@ -68,7 +68,7 @@ const Form = () => {
           htmlFor="attendance"
           className="block text-sm font-medium text-white"
         >
-          Kehadiran
+          Sự hiện diện
         </label>
         <select
           id="attendance"
@@ -76,9 +76,8 @@ const Form = () => {
           className="block w-full p-2 mt-1 bg-black/40 text-white border border-gray-300 rounded-md shadow-sm  sm:text-sm"
           required
         >
-          <option value="">Pilih Kehadiran</option>
-          <option value="Hadir">Hadir</option>
-          <option value="Tidak Hadir">Tidak Hadir</option>
+          <option value="Hadir">Có mặt</option>
+          <option value="Tidak Hadir">Vắng mặt</option>
         </select>
       </div>
 
@@ -87,7 +86,7 @@ const Form = () => {
           htmlFor="guests"
           className="block text-sm font-medium text-white"
         >
-          Jumlah Tamu
+          bạn sẽ có bạn đi chung chứ?
         </label>
         <select
           id="guests"
@@ -95,7 +94,7 @@ const Form = () => {
           className="block w-full p-2 mt-1  bg-black/40 text-white border border-gray-300 rounded-md shadow-sm  sm:text-sm"
           required
         >
-          <option value="">Pilih Jumlah Tamu</option>
+          <option value="">Chọn số lượng khách</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -108,7 +107,7 @@ const Form = () => {
           htmlFor="message"
           className="block text-sm font-medium text-white"
         >
-          Ucapan
+          chia sẻ với chúng tôi một vài lời nhắn nhủ nhé!
         </label>
         <textarea
           id="message"

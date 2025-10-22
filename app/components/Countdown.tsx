@@ -4,7 +4,7 @@ const eventDate = process.env.NEXT_PUBLIC_EVENT_DATE
 
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date(eventDate || "2025-01-01T00:00:00"); 
+    const targetDate = new Date(eventDate || "2026-01-18T11:00:00"); 
     const now = new Date();
     const difference = Number(targetDate) - Number(now);
 

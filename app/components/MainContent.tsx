@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { IoIosArrowUp } from "react-icons/io";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import CountdownTimer from "./Countdown";
@@ -214,11 +214,11 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   {config.groomBio}
                 </p>
                 <Link
-                  href={`https://www.instagram.com/${config.groomInstagram}`}
+                  href="https://www.facebook.com/ovanthang.244683/"
                   target="_blank"
                   className="cursor-pointer hover:bg-black text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#4E4E4E] w-fit px-4 py-2 text-[#CCCCCC]"
                 >
-                  <FaInstagram /> {config.groomInstagram}
+                  <FaFacebook /> Facebook
                 </Link>
               </div>
             </div>
@@ -244,11 +244,11 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   {config.brideBio}
                 </p>
                 <Link
-                  href={`https://www.instagram.com/${config.brideInstagram}`}
+                  href="https://www.facebook.com/TaThuHien15031999"
                   target="_blank"
                   className="cursor-pointer hover:bg-black text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#4E4E4E] w-fit px-4 py-2 text-[#CCCCCC]"
                 >
-                  <FaInstagram /> {config.brideInstagram}
+                  <FaFacebook /> Facebook
                 </Link>
               </div>
             </div>
@@ -267,7 +267,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   className={`text-xl md:text-5xl  text-white font-ovo fadeInMove ${isSlide4InView ? " active" : ""
                     }`}
                 >
-                  A journey in love
+                  Hành Trình Tình Yêu
                 </h1>
                 <h3
                   ref={slide4Ref}
@@ -352,7 +352,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 {config.holyMatrimony.enabled && (
                   <div className="mt-5 mx-auto flex flex-col items-center">
                     <h3 className="uppercase font-ovo text-sm text-center mt-5 mb-2">
-                      Holy Matrimony <br /> {config.holyMatrimony.time}
+                      👰 Nhà Gái <br /> {config.holyMatrimony.time}
                     </h3>
                     <p className="text-sm text-center  font-legan text-white">
                       {config.holyMatrimony.place} <br /> {config.holyMatrimony.place_details}
@@ -370,7 +370,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 {config.weddingReception.enabled && (
                   <div className="mt-5 mx-auto flex  flex-col items-center">
                     <h3 className="uppercase font-ovo text-sm text-center mt-5 mb-2">
-                      Wedding Reception <br /> {config.weddingReception.time}
+                      🤵 Nhà Trai <br /> {config.weddingReception.time}
                     </h3>
                     <p className="text-sm text-center  font-legan text-white">
                       {config.weddingReception.place} <br /> {config.weddingReception.place_details}
@@ -401,7 +401,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   }  fadeInMove flex items-center flex-col`}
               >
                 <h1 className="text-2xl text-center text-white  font-ovo">
-                  ALMOST TIME FOR OURCELEBRATION
+                  GẦN ĐẾN LÚC CHÚNG TA ĂN MỪNG
                 </h1>
                 {/* Countdown Timer */}
                 <CountdownTimer />
@@ -422,7 +422,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   className={`text-2xl text-white  font-ovo fadeInMoveSlow ${isSlide7InView ? "active" : ""
                     }`}
                 >
-                  JOIN OUR EXCLUSIVE LIVE STREAMING EVENT
+                  Tham Gia Buổi tiệc là niềm vinh hạnh của chúng tôi
                 </h1>
 
                 <div
@@ -442,13 +442,13 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   <p className="text-sm font-legan text-white">
                     {config.livestreaming.detail}
                   </p>
-                  <Link
+                  {/* <Link
                     href={config.livestreaming.link}
                     target="_blank"
                     className="cursor-pointer hover:text-white/20 text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#3B3B3B] w-fit px-6 py-2 text-white"
                   >
                     Join Live Streaming
-                  </Link>
+                  </Link> */}
                 </div>
               </div>)}
             {/* SLIDE 8 */}
@@ -466,7 +466,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   className={`${isSlide8InView ? "active" : ""} fadeInMove `}
                 >
                   <h1 className="text-3xl text-white  font-ovo text-center uppercase">
-                    Unveiling Our Prewedding Story
+                    Bật mí câu chuyện trước đám cưới của chúng tôi
                   </h1>
                   <div
                     className="mt-10 mx-auto w-full max-w-2xl relative"
@@ -530,7 +530,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 className={`${isSlide10InView ? "active" : ""} fadeInMove`}
               >
                 <h1 className="text-3xl text-white font-ovo text-center uppercase">
-                  Wishes
+                  Mong Muốn
                 </h1>
                 <WishesList />
               </div>
@@ -562,13 +562,6 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   </p>
                 </div>
               </div>
-
-              <footer className="flex flex-col items-center mt-8">
-                <p className="text-[0.5rem] uppercase text-center">
-                  Created By Peter Shaan
-                </p>
-                <p className="text-xs">© All rights reserved by petershaan</p>
-              </footer>
             </div>
           </>
         )}
